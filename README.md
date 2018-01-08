@@ -37,7 +37,7 @@ Para llevar a cabo este proyecto se deberá cumplir con lo siguiente:
 
 Llevamos a cabo una encuesta consistente en 10 preguntas a un grupo de 7 personas para poder identificar la principal problemática a solucionar. Los resultados obtenidos fueron los siguientes:
 
-<center>![Research](assets/images/encuestas.png)</center>
+![Research](assets/images/encuestas.png)
 
 ## Análisis del research
 
@@ -67,9 +67,9 @@ Crear una red social teniendo en cuenta los siguientes requisitos:
 
 Flujo Visual:
 
-<center>![Mockup](assets/images/mockup-principal.png)</center>
+![Mockup](assets/images/mockup-principal.png)
 
-<center>![Mockup](assets/images/menu-hamburguesa.png)</center>
+![Mockup](assets/images/menu-hamburguesa.png)
 
 ## Testeo
 Realizaremos una primera prueba a nuestro demo desarrollado y observaremos las reacciones de nuestro público-meta. Estos fueron los resultados obtenidos:
