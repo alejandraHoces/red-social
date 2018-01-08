@@ -51,7 +51,11 @@ Llevamos a cabo una encuesta consistente en 7 preguntas a un grupo de 7 personas
 
 ## Mockups de la Aplicacion
 
-![Mockup](assets/images/mockup principal.png)
+Flujo Visual:
+
+![Mockup](assets/images/mockup-principal.png)
+
+![Mockup](assets/images/menu-hamburguesa.png)
 
 ## Testeo
 
