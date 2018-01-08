@@ -72,7 +72,10 @@ Flujo Visual:
 <center>![Mockup](assets/images/menu-hamburguesa.png)</center>
 
 ## Testeo
+Realizaremos una primera prueba a nuestro demo desarrollado y observaremos las reacciones de nuestro público-meta. Estos fueron los resultados obtenidos:
 
 ## Implementación de Feedback
+Cambios a realizar:
 
 ## Funcionalidad de la Aplicación
+Nuestra aplicación ya terminada:
