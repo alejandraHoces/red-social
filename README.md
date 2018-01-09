@@ -31,11 +31,13 @@ Para llevar a cabo este proyecto se deberá cumplir con lo siguiente:
 
 ## Research a los usuarios
 
-* Público-meta : Residentes del Condominio Puertas de Tingomaría
-* Ubicación: Sgto. Antonio Lishner 1798, Cercado de Lima 15082
-* Recurso utilizado: Google Docs
+- Público-meta : Residentes del Condominio Puertas de Tingomaría
+- Ubicación: Sgto. Antonio Lishner 1798, Cercado de Lima 15082
+- Recurso utilizado: Google Docs
 
 Llevamos a cabo una encuesta consistente en 10 preguntas a un grupo de 7 personas para poder identificar la principal problemática a solucionar. Los resultados obtenidos fueron los siguientes:
+
+- Encuesta: https://docs.google.com/forms/d/e/1FAIpQLSene8BPHSungCTY59tX9gEL2xaG_aXceKAT0CzPGVeb69J1qA/viewform?usp=sf_link
 
 ![Research](assets/images/encuestas.png)
 
