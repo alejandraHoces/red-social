@@ -12,46 +12,141 @@
 </head>
 
 <body class="">
-  <nav>
-    <div class="nav-wrapper">
-      <div class="div-logo">
-        <a href="#" class="brand-logo">
-          <img class="logo-general" src="../assets/images/puertas.png" alt="Logo condominio">
-        </a>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
       </div>
-      <a href="#" data-activates="mobile-demo" class="button-collapse">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="sass.html">Sass</a>
-        </li>
-        <li>
-          <a href="badges.html">Components</a>
-        </li>
-        <li>
-          <a href="collapsible.html">Javascript</a>
-        </li>
-        <li>
-          <a href="mobile.html">Mobile</a>
-        </li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li>
-          <a href="sass.html">Sass</a>
-        </li>
-        <li>
-          <a href="badges.html">Components</a>
-        </li>
-        <li>
-          <a href="collapsible.html">Javascript</a>
-        </li>
-        <li>
-          <a href="mobile.html">Mobile</a>
-        </li>
-      </ul>
+    </nav>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="div-logo">
+          <a href="inicio.html" class="brand-logo">
+            <img class="logo-general" src="../assets/images/puertas.png" alt="Logo condominio">
+          </a>
+        </div>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="inicio.html">
+              <i class="material-icons">event</i>Inicio
+            </a>
+          </li>
+          <li>
+            <a href="friends.html">
+              <i class="material-icons">supervisor_account</i>Friends
+            </a>
+          </li>
+          <li>
+            <a href="notifications.html">
+              <i class="material-icons">notifications</i>Notifications
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="material-icons">account_circle</i>Profile
+            </a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="../assets/images/portada.jpg">
+              </div>
+              <a href="#!user">
+                <img class="circle" src="../assets/images/user.jpg">
+              </a>
+              <a href="#!name">
+                <span class="white-text name">John Doe</span>
+              </a>
+              <a href="#!email">
+                <span class="white-text email">jdandturk@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="material-icons">cloud</i> Mi Drive
+            </a>
+          </li>
+          <li>
+            <a href="inicio.html">Inicio</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="friends.html">Friends</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="notifications.html">Notifications</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="col s2">
+              <img src="../assets/images/user.jpg" alt="" class="circle responsive-img">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="input-field col s10">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">¿Algo nuevo que informar?</label>
+            </div>
+          </div>
+          <div class="row container-flex-row">
+            <div class="col s12 container-flex-column ">
+              <div class="fixed-action-btn horizontal">
+                <a class="btn-floating btn-large red">
+                  <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                  <li>
+                    <a class="btn-floating yellow darken-1">
+                      <i class="material-icons">format_quote</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-floating green">
+                      <i class="material-icons">add_a_photo</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-floating blue">
+                      <i class="material-icons">attach_file</i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  </nav>
+  </main>
+
+
   <script src="../vendors/js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
   <script src="../js/inicio.js"></script>

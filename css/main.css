@@ -25,6 +25,9 @@
 	padding: 2em;
 }
 
+.display-block{
+  display: block;
+}
 
 .vh100 {
 	height: 100vh;
@@ -72,3 +75,18 @@ font-weight: bold;
   max-width: 100%;
 }
 /* FIN CLASES PRIMARY */
+
+/* INICIO CLASES LOGIN */
+.line{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.display-block{
+  display: block;
+}
+/* FIN CLASES LOGIN */
+
+/* INICIO MEDIA QUERIES */
+
+/* FIN MEDIA QUERIES */

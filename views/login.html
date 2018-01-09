@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Red Social</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body class="">
-  <!-- <nav>
+  <nav>
     <div class="nav-wrapper">
       <div class="div-logo">
         <a href="#" class="brand-logo center">
@@ -20,109 +21,48 @@
         </a>
       </div>
     </div>
-  </nav> -->
-  <h1 id ="bigOne"></h1>
-  <!-- <div class="row">
+  </nav>
+  <div class="divider line"></div>
+  <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input placeholder="Username" value="Mahesh" id="name" type="text" class="active validate" required />
-          <label for="name">Username</label>
+          <input placeholder="Email" id="email" type="email" class="active validate" required>
+          <label for="email">Email</label>
         </div>
 
-        <div class="input-field col s6">
+        <div class="input-field col s6 m6 ">
           <label for="password">Password</label>
           <input id="password" type="password" placeholder="Password" class="validate" required />
         </div>
       </div>
 
       <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="Email" id="email" type="email" class="validate">
-          <label for="email">Email</label>
+        <div class="col s12  m12 l12 xl12">
+          <a class="btn disabled display-block">Login</a>
         </div>
       </div>
 
       <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">mode_edit</i>
-          <textarea id="address" class="materialize-textarea"></textarea>
-          <label for="address">Address</label>
+        <div class="col s12  m12 l12 xl12">
+          <p> Ingresar con:</p>
+          <a class="waves-effect waves-light btn social google display-block btn-primary">
+          <i class="fa fa-google"></i> Sign in with google</a>   
         </div>
       </div>
 
-      <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="Comments (Disabled)" id="comments" type="text" disabled />
-          <label for="comments">Comments</label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="input-field col s12">
-          <p>
-            <input id="married" type="checkbox" checked="checked" />
-            <label for="married">Married</label>
-          </p>
-
-          <p>
-            <input id="single" type="checkbox" class="filled-in" />
-            <label for="single">Single</label>
-          </p>
-
-          <p>
-            <input id="dontknow" type="checkbox" disabled="disabled" />
-            <label for="dontknow">Don't know (Disabled)</label>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="input-field col s12">
-          <p>
-            <input id="male" type="radio" name="gender" value="male" checked />
-            <label for="male">Male</label>
-          </p>
-
-          <p>
-            <input id="female" type="radio" name="gender" value="female" checked />
-            <label for="female">Female</label>
-          </p>
-
-          <p>
-            <input id="dontknow1" type="radio" name="gender" value="female" disabled />
-            <label for="dontknow1">Don't know (Disabled)</label>
-          </p>
-        </div>
-      </div>
     </form>
-  </div> -->
+  </div>
 <!-- Inicio Enlace BD -->
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDazYh5bEK6rNBj1X6VGa1QFuN_wsvUSs4",
-    authDomain: "redsocial-18498.firebaseapp.com",
-    databaseURL: "https://redsocial-18498.firebaseio.com",
-    projectId: "redsocial-18498",
-    storageBucket: "redsocial-18498.appspot.com",
-    messagingSenderId: "67249186059"
-  };
-  firebase.initializeApp(config);
-  
-  var bigOne = document.getElementById('bigOne');
-  var dbRef = firebase.database().ref().child('text');
-  dbRef.on('value', snap => bigOne.innerText = snap.val());
-</script>
 <!-- Fin Enlace BD -->
 
 </body>
 
-<!-- <script src="../vendors/js/jquery-3.2.1.js"></script>
+<script src="../vendors/js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
-<script src="../js/login.js"></script> -->
+<script src="../js/login.js"></script>
 </body>
 
 </html>

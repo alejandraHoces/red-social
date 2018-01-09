@@ -1,35 +1,16 @@
-function begin() {
-  function nameValid() {
-    return $('#first_name').val().length >= 3;
-  }
-
-  function lastNameValid() {
-    return $('#last_name').val().length >= 3;
-  }
-
-  function emailValid() {
-    return !$('#email').hasClass('invalid') && ($('#email').val().trim().length !== 0);
-  }
-
-  function checkboxValid() {
-    return $('#filled-in-box').prop('checked');
-  }
-
-  function allOk() {
-    return nameValid() && lastNameValid() && emailValid();
-  }
-
-  $('#filled-in-box').on('change', function() {
-    if (allOk()) {
-      $('#btn-next a').removeClass('disabled');
-    } else {
-      $(this).prop('checked', false);
-    }
-  });
-
-  $('#btn-next a').on('click', function() {
-    $(location).attr('href', 'home.html');
-  });
-}
-
-$(document).ready(begin);
+$(document).ready(function() {
+  // Initialize Firebase
+  var config = {
+    apiKey: 'AIzaSyDazYh5bEK6rNBj1X6VGa1QFuN_wsvUSs4',
+    authDomain: 'redsocial-18498.firebaseapp.com',
+    databaseURL: 'https://redsocial-18498.firebaseio.com',
+    projectId: 'redsocial-18498',
+    storageBucket: 'redsocial-18498.appspot.com',
+    messagingSenderId: '67249186059'
+  };
+  firebase.initializeApp(config);
+    
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref().child('text');
+  // dbRef.on('value', snap => bigOne.innerText = snap.val());
+});
