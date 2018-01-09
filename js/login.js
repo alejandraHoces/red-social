@@ -1,40 +1,16 @@
 $(document).ready(function() {
-  var $email = $('#inputEmail');
-  var $password = $('#inputPassword');
-  var $buttonSubmit = $('button[type="submit"]');
-
-  // variable booleanas para la activación del boton  
-  var validateEmail = false;
-  var validatePassword = false; 
-
-  // llamamos a los valores guardados en el localStorage
-  console.log(localStorage.email);
-  console.log(localStorage.password);
-
- 
-  $email.on('input', function() {
-    if ($(this).val() === localStorage.email) {
-      // alert('pasa');
-      validateEmail = true;
-    }
-  });
-
-  $password.on('input', function() {
-    if ($(this).val() === localStorage.password) {
-      // alert('esto tambien pasa');
-      validatePassword = true;
-    }
-  });
-
-
-  $buttonSubmit.on('click', function(event) {
-    event.preventDefault();
-    if (validateEmail && validatePassword) {
-      alert('Oh my gad!! You are for Lyft');
-      window.location.href = 'close.html';
-    } else {
-      alert('Oh no, you need register');
-    }
-   
-  });
+  // Initialize Firebase
+  var config = {
+    apiKey: 'AIzaSyDazYh5bEK6rNBj1X6VGa1QFuN_wsvUSs4',
+    authDomain: 'redsocial-18498.firebaseapp.com',
+    databaseURL: 'https://redsocial-18498.firebaseio.com',
+    projectId: 'redsocial-18498',
+    storageBucket: 'redsocial-18498.appspot.com',
+    messagingSenderId: '67249186059'
+  };
+  firebase.initializeApp(config);
+  
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref().child('text');
+  // dbRef.on('value', snap => bigOne.innerText = snap.val());
 });

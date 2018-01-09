@@ -6,9 +6,12 @@
 	font-family: 'Raleway', sans-serif;
 }
 
-.img{
-  width: 80%;
-  margin-left: 30px;
+.img-post{
+  width: 100%;
+}
+
+main{
+  margin-top: 20px;
 }
 
 /* FÍN CLASES REUTILIZABLES */
@@ -25,6 +28,9 @@
 	padding: 2em;
 }
 
+.display-block{
+  display: block;
+}
 
 .vh100 {
 	height: 100vh;
@@ -34,179 +40,59 @@
   color: white;
 }
 
+.text-color-title{
+  color: #ee6e73; 
+}
+
 .grad10 {
   background: linear-gradient( rgb(158, 205, 235) 65%, rgb(200, 231, 243));
 	}
 
+.title-principal{
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.logo-general{
+  width: 65%;
+}
+
+/* INICIO CLASES INDEX */
+
 /* GRADIENTE PARA EL INICIO*/
 .grad70 {
   background: linear-gradient( rgb(158, 205, 235) 65%, rgb(200, 231, 243));
-	}
-
-/* INICIO CLASES REGISTER */
-.margin-big{
-  margin-top: 35%;
-}
-/*BACKGRAUND IMG*/
-.backgraund-img{
-	background-image: url(../assets/img/taxi.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;		
 }
 
-.img-logo{
-  width: 100%;
-}
-
-.container-a{
-	display: flex;
-  justify-content: space-between;
-}
-
-.container-a a{
-  padding: 10px;
-  background-color: transparent;
-  font-weight: 900;
-  font-size: 20px;
-  color: rgb(253, 22, 118);
-}
-
-.buttons-register {
-	padding: 2em;
-}
-/* FIN VENTANAS REGISTER */
+/* FIN CLASES INDEX */
 
 /* INICIO CLASES PRIMARY */
 .btn-primary{
   background-color: #ee6e73;
 }
-.btn-success {
-	padding: 0.5em;
-	margin-bottom: 3em;
-	background-color: rgb(240, 14, 153);	
-	border: none;
+
+/* FIN CLASES PRIMARY */
+
+/* INICIO CLASES PRIMARY */
+.div-logo{
+  max-width: 100%;
 }
 /* FIN CLASES PRIMARY */
 
-/* INICIO CLASES SIGNUP */
-.img-banderas{
-  width: 40px;
+/* INICIO CLASES LOGIN */
+.line{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.back a{
-  color:rgb(56, 53, 55);
-  font-size: 45px;
-  font-weight: 500;
-	border-radius: 50%;
-	border: 2px solid rgb(56, 53, 55);
-	padding-right: 3px;
+.display-block{
+  display: block;
 }
+/* FIN CLASES LOGIN */
 
-.inline-block{
-  display: inline-block;
-}
+/* CLASES PROFILE */
 
-.center{
-  text-align: center;
-}
 
-.margin-right{
-  margin-right: 20px;
-}
+/* INICIO MEDIA QUERIES */
 
-.margin-bottom{
-  margin-bottom: 30px;
-}
-
-.input{
-  border:none;
-  border-bottom: 2px solid #72787A  ;
-  font-size: 20px;
-  width: 80%;
-  outline: none;
-}
-
-.span-number{
-  font-size: 20px;
-  margin-right: 5px;
-}
-
-.margin-button{
-  margin-top: 150px;
-}
-
-.margin-top{
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.disabled-color{
-  background-color: #CDCDCE;
-  font-weight: 900;
-}
-
-.enabled-color{
-  background-color: #F9498A;
-  font-weight: 900;
-}
-/* FIN CLASES SIGNUP */
-
-/* INICIO CLASES VERIFY*/
-.title{
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.input-cod{
-  width: 20px;
-  font-size: 20px;
-  border:none;
-  border-bottom: 1px solid #F61F63;
-  outline: none;
-}
-
-.button-reset{
-  outline: none;
-  background-color: #A08FEB;
-  color:#fff;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 500;
-}
-/* FIN CLASES VERIFY */
-
-/* INICIO CLASES FORM*/
-.title{
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.input-cod{
-  width: 20px;
-  font-size: 20px;
-  border:none;
-  border-bottom: 1px solid #F61F63;
-  outline: none;
-}
-
-.button-reset{
-  outline: none;
-  background-color: #A08FEB;
-  color:#fff;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 500;
-}
-/* FIN CLASES FORM */
-
-.title {
-	padding: 0.5em;
-	margin-bottom: 1em;
-}
-
-.signup {
- background:  rgb(240, 14, 153);	
-}
+/* FIN MEDIA QUERIES */
