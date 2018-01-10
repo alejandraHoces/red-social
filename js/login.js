@@ -12,10 +12,15 @@ $(document).ready(function() {
   // Inicializamos Firebase
   firebase.initializeApp(config);
 
+  // Obtener Elementos 
   var $txtEmail = $('#email'); 
   var $txtPassword = $('#password');
   var $btnSignup = $('#btn-login');
   var $btnLogGoogle = $('#btn-google');
+
+  // variables booleanas para la activacion del boton
+  var validateEmail = false;
+  var validatePassword = false;
 
   // Aqui indicar que se puede implementar la función como variable
   function activeButton() {
@@ -47,6 +52,7 @@ $(document).ready(function() {
     // console.log($(this).val());
     if ($(this).val().length >= 6) {
       validatePassword = true;
+      activeButton(); 
     }
     // console.log($(this).val().length);
     console.log(validatePassword);
@@ -57,12 +63,54 @@ $(document).ready(function() {
   // añadivos evento al signup
   $btnSignup.on('click', function(event) {
     // Obtnemos los valores de los campos
-    var $userName = $txtUsername.val();
-    var $lastName = $txtLastName.val();
     var $email = $txtEmail.val();
     var $pass = $txtPassword.val();
 
     var $promise = $auth.signInWithEmailAndPassword($email, $pass);
     $promise.catch(event => alert(event.message));
+
+    window.location.href = 'inicio.html';
+  });
+
+  $btnLogGoogle.on('click', function(event) {
+    var $provider = new firebase.auth.GoogleAuthProvider();
+    $provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+    firebase.auth().getRedirectResult().then(function(result) {
+      consolelog(result.user);
+      // if (result.credential) {
+      //   // This gives you a Google Access Token. You can use it to access the Google API.
+      //   var token = result.credential.accessToken;
+      //   // ...
+      // }
+      // // The signed-in user info.
+      // var user = result.user;
+    });
+    // .catch(function(error) {
+    //   // Handle Errors here.
+    //   var errorCode = error.code;
+    //   var errorMessage = error.message;
+    //   // The email of the user's account used.
+    //   var email = error.email;
+    //   // The firebase.auth.AuthCredential type that was used.
+    //   var credential = error.credential;
+    //   // ...
+    // });
+    // $auth.signInWithPopup(provider).then(function(result) {
+    //   console.log(result.user);
+    //   // This gives you a Google Access Token. You can use it to access the Google API.
+    //   var token = result.credential.accessToken;
+    //   // The signed-in user info.
+    //   var user = result.user;
+    //   // ...
+    // }).catch(function(error) {
+    //   // Handle Errors here.
+    //   var errorCode = error.code;
+    //   var errorMessage = error.message;
+    //   // The email of the user's account used.
+    //   var email = error.email;
+    //   // The firebase.auth.AuthCredential type that was used.
+    //   var credential = error.credential;
+    //   // ...
+    // });
   });
 });
