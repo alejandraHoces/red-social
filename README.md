@@ -15,7 +15,7 @@ The Code Sisterhood
 - CSS3
 - JS
 - jQuery 3.2.1
-- Bootstrap 3.3.7
+- Materialize
 - Firebase
 
 ## Requerimientos
@@ -76,17 +76,20 @@ Flujo Visual:
 ## Testeo
 Realizaremos una primera prueba a nuestro demo desarrollado y observaremos las reacciones de nuestro público-meta. Estos fueron los resultados obtenidos:
 
+- Encuesta: https://docs.google.com/forms/d/e/1FAIpQLSeZxdAgPWeKw0zfuhgM-mRDmC-Zv9svsI55X9vdRnDO7r5cbQ/viewform?c=0&w=1&usp=mail_form_link
+
 ![Encuesta](assets/images/fireshot.png)
 
-## Implementación de Feedback
-
-Cambios a realizar:
-
+## Análisis del Feedback recibido
 
 De las respuestas obtenidas podemos concluir lo siguiente: 
+
 - Al 100% de encuestados se les hizo sencillo el ubicar el contenido en la aplicación. El tamaño de fuente, ubicación de botones, colores usados y demás contenido favorece a este propósito.
-- Lo que más resaltó a ojos de nuestros usuarios fue el diseño básico y fácil de utilizar y la ubicación de cada cosa en la plataforma.
-- Lo que más les gustó fue el hecho de que actuara como un "mini-facebook", comentario recibido por una de las usuarias. Desaca el hecho de que sea funcional y básica y también el hecho de oder ingresar con tu cuenta de gmail.
-- Nuestros usuarios no encontraron detalles que les desagraden o importunasen a la hora de navegar a través de las visitas de la app, con la excepción de una funcionalidad por añadir a futuro: el poder revisar el perfil de un amigo.
+- Lo que más resaltó a ojos de nuestros usuarios fue el diseño básico y fácil de utilizar y la ubicación de cada elemento en la plataforma.
+- Lo que más les gustó fue el hecho de que actuara como un "mini-facebook", comentario recibido por una de las usuarias. Destaca el hecho de que sea funcional y básico y también el hecho de poder ingresar con sus respectivas cuentas de gmail.
+- Nuestros usuarios no encontraron detalles que les desagraden o importunasen a la hora de navegar a través de las vistas de la app, con la excepción de una funcionalidad por añadir a futuro: el poder revisar el perfil de un amigo.
 - Al pensar en qué funciones les agradaría añadir a la app, surgieron dos ideas nuevas: un chat y el poder crear un perfil para un negocio local. Ambas funciones serán consideradas para incluirse en un futuro próximo. 
 
+## Repartición de tareas y cronograma
+
+![Tareas](assets/images/trello.png)
