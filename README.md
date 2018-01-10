@@ -76,7 +76,7 @@ Flujo Visual:
 ## Testeo
 Realizaremos una primera prueba a nuestro demo desarrollado y observaremos las reacciones de nuestro público-meta. Estos fueron los resultados obtenidos:
 
-![Encuesta](assets/images/FireShot Capture 2 - Formulario sin título - Formularios de_ - https___docs.google.com_forms_d_1iw.png)
+![Encuesta](assets/images/fireshot.png)
 
 ## Implementación de Feedback
 
