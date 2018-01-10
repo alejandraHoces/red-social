@@ -19,11 +19,37 @@ $(document).ready(function() {
   // capturamos el boton para subir imagen de perfil
   var $btnProfile = $('#btn-perfil');
   var $imgProfile = $('#img-profile');
+  var $nameUser = $('#name-user');
   
   var $uploader = 0;
-  
-  $btnProfile.on('change', function(event) {
 
+  // var arrUser = [];
+  // $.each(data, function(i, item) {
+  //   arrUser.push(i);
+  // });
+
+  console.log(arrUser);
+
+  console.log(localStorage.mail);
+
+  // console.log(data.users[0].name);
+
+  if (localStorage.mail === data.users[1].email) {
+    // $nameUser.text(data.users[i].name);
+    console.log(data.users[1].name);
+  }
+
+  // for (var i = 0; i++ ; i < data.users.length) {
+  //   debugger;
+  //   if (localStorage.mail = data.users[i].email) {
+  //     // $nameUser.text(data.users[i].name);
+  //     console.log(data.users[i].name);
+  //   }
+  // }
+
+  //
+
+  $btnProfile.on('change', function(event) {
     // Obtener el archivo
     var $file = event.target.files[0];
   
@@ -32,7 +58,7 @@ $(document).ready(function() {
     var $storageRef = firebase.storage().ref('profile_photo/' + $file.name);
 
     $imgProfile.removeAttr('src');
-    $imgProfile.attr('src', firebase.storage().ref('profile_photo/' + $file.name));
+    // $imgProfile.attr('src', firebase.storage().ref('profile_photo/' + $file.name));
 
 
     // subir archivo
@@ -52,7 +78,5 @@ $(document).ready(function() {
       function complete() {
 
       });
-
   });
-
 });  

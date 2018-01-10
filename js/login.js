@@ -35,6 +35,8 @@ $(document).ready(function() {
 
   $txtEmail.on('input', function(event) {
     // console.log(event.target.value);
+    localStorage.mail = event.target.value;
+    console.log(localStorage.mail);
     var REGEXEMAIL = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
     // console.log(REGEXEMAIL.test($(this).val()));
     // console.log($(this).val());
