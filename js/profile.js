@@ -20,7 +20,7 @@ $(document).ready(function() {
   var $btnProfile = $('#btn-perfil');
   var $imgProfile = $('#img-profile');
   var $nameUser = $('#name-user');
-  
+
   var $uploader = 0;
 
   // var arrUser = [];
@@ -28,7 +28,7 @@ $(document).ready(function() {
   //   arrUser.push(i);
   // });
 
-  console.log(arrUser);
+  // console.log(arrUser);
 
   console.log(localStorage.mail);
 
@@ -52,7 +52,7 @@ $(document).ready(function() {
   $btnProfile.on('change', function(event) {
     // Obtener el archivo
     var $file = event.target.files[0];
-  
+
 
     // creamos una storage ref
     var $storageRef = firebase.storage().ref('profile_photo/' + $file.name);
@@ -64,7 +64,7 @@ $(document).ready(function() {
     // subir archivo
     var $task = $storageRef.put($file);
 
-    $task.on('state_changed', 
+    $task.on('state_changed',
       function progress(snapshot) {
         var $percentage = (snapshot.bytesTransferred / snapshot.totalButes) * 100;
         $uploader = $percentage;
@@ -79,4 +79,4 @@ $(document).ready(function() {
 
       });
   });
-});  
+});

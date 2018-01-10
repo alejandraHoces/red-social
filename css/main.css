@@ -18,7 +18,7 @@ main{
 .container-flex-row {
 	display: flex;
 	justify-content: space-between;
-  
+
 }
 
 .container-flex-column {
@@ -41,7 +41,7 @@ main{
 }
 
 .text-color-title{
-  color: #ee6e73; 
+  color: #ee6e73;
 }
 
 .grad10 {
@@ -68,7 +68,7 @@ font-weight: bold;
 
 /* INICIO CLASES PRIMARY */
 .btn-primary{
-  background-color: #ee6e73;
+  background-color: #641E16;
 }
 
 /* FIN CLASES PRIMARY */
@@ -89,7 +89,11 @@ font-weight: bold;
   display: block;
 }
 /* FIN CLASES LOGIN */
+#img-profile{
+  max-width: 30%;
+  margin-left: 33%;
 
+}
 /* CLASES PROFILE */
 
 
