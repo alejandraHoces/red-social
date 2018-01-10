@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
 </head>
-
 <body class="">
   <nav>
     <div class="nav-wrapper">
@@ -31,27 +29,22 @@
           <input placeholder="Username" value="" id="name" type="text" class="active validate" required />
           <label for="name">Username</label>
         </div>
-
         <div class="input-field col s12 m6 l6 xl6">
           <input placeholder="Lastname" value="" id="lastname" type="text" class="active validate" required />
           <label for="name">LastName</label>
         </div>
-
         <div class="input-field col s12 m6 l6 xl6">
           <i class="material-icons prefix">email</i>
           <input placeholder="Email" id="email" type="email" class="active validate" required>
           <label for="email">Email</label>
         </div>
-
         <div class="input-field col s12 m6 l6 xl6">
           <label for="password">Password</label>
           <input id="password" type="password" placeholder="Password" class="validate" required />
         </div>
-
         <div class="col s12 m6 l6 xl6">
           <a href="#">Crear una página para negocio</a>
         </div>
-
         <div class="col s12 m6 l6 xl6">
           <p>
             <input type="checkbox" class="filled-in" id="filled-in-box" />
@@ -59,32 +52,26 @@
           </p>
         </div>
       </div>
-
       <div class="row">
         <div class="col s12  m12 l12 xl12">
           <a class="btn disabled display-block" id="btn-signup">SignUP</a>
         </div>
       </div>
-
       <div class="row">
         <div class="col s12  m12 l12 xl12">
           <p> Ingresar con:</p>
           <a id="btn-google" class="waves-effect waves-light btn social google display-block btn-primary">
             <i class="fa fa-google"></i> Sign in with google</a>
+          </div>
         </div>
-      </div>
-
-    </form>
-  </div>
-  <!-- Inicio Enlace BD -->
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <!-- Fin Enlace BD -->
-
+      </form>
+    </div>
+    <!-- Inicio Enlace BD -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!-- Fin Enlace BD -->
+  </body>
+  <script src="../vendors/js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="../js/signUp.js"></script>
 </body>
-
-<script src="../vendors/js/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
-<script src="../js/signUp.js"></script>
-</body>
-
 </html>

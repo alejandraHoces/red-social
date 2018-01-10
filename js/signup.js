@@ -9,8 +9,7 @@ $(document).ready(function() {
     messagingSenderId: '67249186059'
   };
   firebase.initializeApp($config);
-
-  // Obtener Elementos 
+  // Obtener Elementos
   var $txtUsername = $('#name');
   var $txtLastName = $('#lastname');
   var $txtEmail = $('#email');
@@ -18,25 +17,21 @@ $(document).ready(function() {
   var $checkAcepted = $('#filled-in-box');
   var $btnSignup = $('#btn-signup');
   var $btnLogGoogle = $('#btn-google');
-
-  // variable booleanas para la activación del boton 
+  // variable booleanas para la activación del boton
   var validateUsername = false;
   var validateLastname = false;
   var validateEmail = false;
   var validatePassword = false;
   var validateChecked = false;
-
   // Aqui indicar que se puede implementar la función como variable
   function activeButton() {
     if (validateUsername && validateLastname && validateEmail && validatePassword && validateChecked) {
       $btnSignup.removeClass('disabled');
     }
   }
-
   function desactiveButton() {
     $btnSignup.addClass('disabled');
   }
-
   $txtUsername.on('input', function(event) {
     if ($(this).val().length > 2) {
       validateUsername = true;
@@ -44,7 +39,7 @@ $(document).ready(function() {
     // console.log($(this).val().length);
     console.log(validateUsername);
   });
-
+  
   $txtLastName.on('input', function(event) {
     if ($(this).val().length > 2) {
       validateLastname = true;
