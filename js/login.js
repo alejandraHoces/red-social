@@ -13,7 +13,7 @@ $(document).ready(function() {
   firebase.initializeApp(config);
 
   // Obtener Elementos 
-  var $txtEmail = $('#email'); 
+  var $txtEmail = $('#email');
   var $txtPassword = $('#password');
   var $btnSignup = $('#btn-login');
   var $btnLogGoogle = $('#btn-google');
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   function desactiveButton() {
     $btnSignup.addClass('disabled');
-  } 
+  }
 
   $txtEmail.on('input', function(event) {
     // console.log(event.target.value);
@@ -42,7 +42,7 @@ $(document).ready(function() {
     // console.log($(this).val());
     if (REGEXEMAIL.test($(this).val())) {
       validateEmail = true;
-      activeButton(); 
+      activeButton();
     } else {
       desactiveButton();
     };
@@ -54,14 +54,14 @@ $(document).ready(function() {
     // console.log($(this).val());
     if ($(this).val().length >= 6) {
       validatePassword = true;
-      activeButton(); 
+      activeButton();
     }
     // console.log($(this).val().length);
     console.log(validatePassword);
   });
 
   var $auth = firebase.auth();
-    
+
   // añadivos evento al signup
   $btnSignup.on('click', function(event) {
     // Obtnemos los valores de los campos

@@ -30,14 +30,14 @@ $(document).ready(function() {
 
   // console.log(arrUser);
 
-  console.log(localStorage.mail);
+  // console.log(localStorage.mail);
 
   // console.log(data.users[0].name);
 
-  if (localStorage.mail === data.users[1].email) {
-    // $nameUser.text(data.users[i].name);
-    console.log(data.users[1].name);
-  }
+  // if (localStorage.mail === data.users[1].email) {
+  //   // $nameUser.text(data.users[i].name);
+  //   console.log(data.users[1].name);
+  // }
 
   // for (var i = 0; i++ ; i < data.users.length) {
   //   debugger;
@@ -79,4 +79,4 @@ $(document).ready(function() {
 
       });
   });
-});
+});  

@@ -13,19 +13,19 @@ $(document).ready(function() {
   // Obtener Elementos 
   var $txtUsername = $('#name');
   var $txtLastName = $('#lastname');
-  var $txtEmail = $('#email'); 
+  var $txtEmail = $('#email');
   var $txtPassword = $('#password');
   var $checkAcepted = $('#filled-in-box');
   var $btnSignup = $('#btn-signup');
   var $btnLogGoogle = $('#btn-google');
 
   // variable booleanas para la activación del boton 
-  var validateUsername = false; 
+  var validateUsername = false;
   var validateLastname = false;
   var validateEmail = false;
   var validatePassword = false;
-  var validateChecked = false; 
-   
+  var validateChecked = false;
+
   // Aqui indicar que se puede implementar la función como variable
   function activeButton() {
     if (validateUsername && validateLastname && validateEmail && validatePassword && validateChecked) {
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
   function desactiveButton() {
     $btnSignup.addClass('disabled');
-  } 
+  }
 
   $txtUsername.on('input', function(event) {
     if ($(this).val().length > 2) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
     }
     // console.log($(this).val().length);
     console.log(validateUsername);
-  }); 
+  });
 
   $txtLastName.on('input', function(event) {
     if ($(this).val().length > 2) {
@@ -51,7 +51,7 @@ $(document).ready(function() {
     }
     // console.log($(this).val().length);
     console.log(validateLastname);
-  }); 
+  });
 
   $txtEmail.on('input', function(event) {
     // console.log(event.target.value);
@@ -60,7 +60,7 @@ $(document).ready(function() {
     // console.log($(this).val());
     if (REGEXEMAIL.test($(this).val())) {
       validateEmail = true;
-      activeButton(); 
+      activeButton();
     } else {
       desactiveButton();
     };
@@ -89,7 +89,7 @@ $(document).ready(function() {
   });
 
   var $auth = firebase.auth();
-    
+
   // añadivos evento al signup
   $btnSignup.on('click', function(event) {
     // Obtnemos los valores de los campos
