@@ -50,12 +50,17 @@
           </li>
           <li>
             <a href="notifications.html">
-              <i class="material-icons">notifications</i>Notifications
+              <i class="material-icons">notifications</i>Notif.
             </a>
           </li>
           <li>
             <a href="profile.html">
               <i class="material-icons">account_circle</i>Profile
+            </a>
+          </li>
+          <li>
+            <a href="primary.html">
+              <i class="material-icons">close</i>Cerrar
             </a>
           </li>
         </ul>
@@ -96,6 +101,18 @@
           <li>
             <a href="notifications.html">Notifications</a>
           </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="profile.html">Profile</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="primary.html">Close</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -110,11 +127,89 @@
         </div>
         <div class="col s12">
           <div class="col s2">
-            <img src="../assets/images/user.jpg" alt="" class="circle responsive-img">
+            <img id="img-profile" src="../assets/images/user.jpg" alt="" class="circle responsive-img">
+            <form action="#">
+              <div class="file-field input-field">
+                <div class="btn">
+                  <i class="material-icons">insert_photo</i>
+                  <input type="file" id="btn-perfil" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" placeholder="load foto">
+                </div>
+              </div>
+            </form>
             <!-- notice the "circle" class -->
           </div>
           <div class="col s10 container-flex-column">
             <img src="../assets/images/portada.jpg" class="responsive-img">
+            <form action="#">
+              <div class="file-field input-field">
+                <div class="btn">
+                  <i class="material-icons">insert_photo</i>
+                  <input type="file" id="btn-portada" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" placeholder="Change potho portada">
+                </div>
+              </div>
+            </form>
+            <table class="responsive-table centered highlight">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>jdandturk@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col s12">
+          <i class="material-icons">supervisor_account</i>
+          <h1 class="center-align"> Your Friends</h1>
+        </div>
+        <div class="col s12">
+          <div class="col s2">
+            <img src="../assets/images/friend.jpg" alt="" class="circle responsive-img">
+            <!-- notice the "circle" class -->
+          </div>
+          <div class="col s10 container-flex-column">
+            <table class="responsive-table centered highlight">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>jdandturk@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="col s12">
+          <div class="col s2">
+            <img src="../assets/images/friend.jpg" alt="" class="circle responsive-img">
+            <!-- notice the "circle" class -->
+          </div>
+          <div class="col s10 container-flex-column">
             <table class="responsive-table centered highlight">
               <thead>
                 <tr>
@@ -135,6 +230,10 @@
       </div>
     </div>
   </main>
+
+  <!-- Inicio Enlace BD -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- Fin Enlace BD -->
 
   <script src="../vendors/js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
