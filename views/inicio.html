@@ -145,11 +145,12 @@
               <form action="#">
                 <div class="file-field input-field">
                   <div class="btn" id="">
+                    <!--Agregando solucion para subir la foto-->
                     <i class="material-icons">insert_photo</i>
-                    <input id="file" type="file" multiple>
+                  <!--  <input id="file" type="file" multiple>-->
                   </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                  <div class="">
+                    <input class="file-path validate" type="text" id="urlInput" placeholder="Pon la URL de la imagen que quieres utilizar" aria-describedby="url">
                   </div>
                 </div>
               </form>
@@ -161,6 +162,7 @@
     </div>
     <div class="container">
       <div id="board" class="row">
+        </div>
         <form class="col s12">
           <div class="row">
             <div class="col s2">
@@ -173,8 +175,7 @@
             </div>
           </div>
         </form>
-      </div>
-    </div>
+     </div>
   </main>
   <script src="../vendors/js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
